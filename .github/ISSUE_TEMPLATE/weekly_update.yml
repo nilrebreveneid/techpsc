@@ -1,0 +1,46 @@
+name: Weekly Update
+description: Record contributor or team progress updates.
+title: "[Update] "
+labels: ["type/update"]
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: Contributor or team
+      placeholder: Name of contributor or team
+    validations:
+      required: true
+
+  - type: input
+    id: week
+    attributes:
+      label: Week or date range
+      placeholder: Example: 2026-04-13 to 2026-04-19
+    validations:
+      required: true
+
+  - type: textarea
+    id: completed
+    attributes:
+      label: Completed work
+      placeholder: What got done?
+    validations:
+      required: true
+
+  - type: textarea
+    id: in_progress
+    attributes:
+      label: In progress
+      placeholder: What is ongoing?
+
+  - type: textarea
+    id: blockers
+    attributes:
+      label: Blockers
+      placeholder: Anything slowing down the work?
+
+  - type: textarea
+    id: next_steps
+    attributes:
+      label: Next steps
+      placeholder: What happens next?
