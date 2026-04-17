@@ -1,0 +1,80 @@
+name: Finance Record
+description: Track expense, reimbursement, payment request, or budget approval.
+title: "[Finance] "
+labels: ["type/finance", "needs-triage"]
+body:
+  - type: dropdown
+    id: finance_type
+    attributes:
+      label: Finance type
+      options:
+        - Expense
+        - Reimbursement
+        - Budget request
+        - Payment follow-up
+        - Invoice
+    validations:
+      required: true
+
+  - type: input
+    id: owner
+    attributes:
+      label: Requested by
+      placeholder: Name of the person or team
+    validations:
+      required: true
+
+  - type: input
+    id: amount
+    attributes:
+      label: Amount
+      placeholder: Example: 2500
+    validations:
+      required: true
+
+  - type: input
+    id: currency
+    attributes:
+      label: Currency
+      placeholder: Example: NPR or USD
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      placeholder: YYYY-MM-DD
+
+  - type: dropdown
+    id: payment_status
+    attributes:
+      label: Payment status
+      options:
+        - Pending
+        - Under review
+        - Approved
+        - Paid
+        - Rejected
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      placeholder: Explain what the amount is for.
+    validations:
+      required: true
+
+  - type: input
+    id: proof_link
+    attributes:
+      label: Proof link
+      placeholder: Receipt, invoice, drive link, or PR link
+
+  - type: input
+    id: approved_by
+    attributes:
+      label: Approved by
+      placeholder: Name of approver
