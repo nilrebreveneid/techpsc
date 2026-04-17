@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: TECHPSC setup notes
+    url: https://github.com/nilrebreveneid/techpsc
+    about: Use the project setup docs in this repository for workflow guidance.
