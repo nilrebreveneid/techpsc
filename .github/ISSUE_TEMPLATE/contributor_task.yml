@@ -1,0 +1,65 @@
+name: Contributor Task
+description: Create or assign contributor work with points and submission requirements.
+title: "[Task] "
+labels: ["type/task", "needs-triage"]
+body:
+  - type: input
+    id: contributor_name
+    attributes:
+      label: Contributor name
+      placeholder: Name of the contributor
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Development
+        - Design
+        - Documentation
+        - Operations
+        - Outreach
+        - Research
+    validations:
+      required: true
+
+  - type: input
+    id: points
+    attributes:
+      label: Proposed points
+      placeholder: Example: 5
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task description
+      description: Explain what needs to be done.
+      placeholder: Describe the task clearly.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What should be true for this task to be accepted?
+      placeholder: List the completion conditions.
+    validations:
+      required: true
+
+  - type: input
+    id: due_date
+    attributes:
+      label: Due date
+      placeholder: YYYY-MM-DD
+
+  - type: textarea
+    id: submission_requirements
+    attributes:
+      label: Submission requirements
+      description: Add links, screenshots, PR requirement, or file submission instructions.
+      placeholder: Explain how the contributor must submit the work.
