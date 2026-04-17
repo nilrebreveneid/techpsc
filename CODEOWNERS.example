@@ -1,0 +1,8 @@
+# Replace usernames or teams with actual GitHub handles after contributors are finalized.
+
+* @techpsc-admin
+
+# Example ownership by folder:
+# /finance/ @techpsc-finance
+# /docs/ @techpsc-ops
+# /src/ @techpsc-dev
